@@ -2,47 +2,16 @@
 
 require_once(__DIR__."/../process/connexionBdd.php");
 
+include '../View/header.php';
+
 ?>
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!----- ***** BOOTSTRAP LINKS ******------>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <!----- ***** GOOGLE FONTS LINKS ******------>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!----- ***** CSS LINK ******------>
-    <link rel="stylesheet" href="/main.css">
-    <!----- ***** URL ICON LINK ******------>
-    <link rel="icon" href="/img/logo2.png" />
-    <title>Menu</title>
-
-    <!-- NAV BAR -->
-    <div class="navbar sticky-top">
-        <img src="/img/logo2.png" width="50vw">
-        <div class="navbar__brand">QUIZ TIME !</div>
-        <div class="navbar__menu">
-            <a class="navbar__item" href="menu.php?id=<?=$_GET['id'];?>">Home ❓<span class="navbar__item__hovered"></span><span class="navbar__item__content" data-content="Home ❓"></span></a>
-            <a class="navbar__item" href="/index.php">Login 👀<span class="navbar__item__hovered"></span><span class="navbar__item__content" data-content="Login 👀"></span></a>
-            <a class="navbar__item" href="quiz.php?id=<?=$_GET['id'];?>">Play 🪅<span class="navbar__item__hovered"></span><span class="navbar__item__content" data-content="Play 🪅"></span></a>
-            <a class="navbar__item" href="score.php?id=<?=$_GET['id'];?>">LeaderBoard 🏆<span class="navbar__item__hovered"></span><span class="navbar__item__content" data-content="LeaderBoard 🏆"></span></a>
-            <a class="navbar__item navbar__item__icon" href="javascript:void(0);" onclick="navResponsive()"><i class="fa fa-bars"></i></a>
-        </div>
-    </div>
-</head>
-
-<body>
 
      <!--SECTION 1 HEADER-->
      <h1>LEADER BOARD</h1>
 
     <div class="container" id="leader">
-        <div class="row">
-            <div class="col-4 best1">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-md-offset-4 best1">
                 <h2>N1 PLAYER</h2>
                 <img src="/img/crown.png" width="100vw">
 
@@ -66,8 +35,9 @@ require_once(__DIR__."/../process/connexionBdd.php");
                     ?>
                 
             </div>
-            
-            <div class="col-8 lists">
+        </div>   
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-md-offset-4 lists">
                 
                 <div type="text" class="players-list">
                     <h2>10 MEILLEURS SCORES !</h2>
@@ -106,10 +76,6 @@ require_once(__DIR__."/../process/connexionBdd.php");
         </div>
     </div>
 
-    <!----- ***** FOOTER ******------>
-    <footer class="footer">
-        <img src="/img/logo2.png" width="80vw">
-    </footer>
 
 
     <!----- ***** BOOTSTRAP SCRIPTS ******------>

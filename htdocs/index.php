@@ -15,7 +15,7 @@ require_once(__DIR__."/process/connexionBdd.php");
     <!----- ***** GOOGLE FONTS LINKS ******------>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!----- ***** CSS LINK ******------>
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/CSS/main.css">
     <!----- ***** URL ICON LINK ******------>
     <link rel="icon" href="/img/logo2.png" />
 
@@ -41,6 +41,8 @@ require_once(__DIR__."/process/connexionBdd.php");
     echo '<div style="padding: 17px; width: 35vw; margin-left: 30vw; background-color: rgb(189, 190, 255); border-radius: 20px; text-align: center; color: white;">'.$_GET['message'].'</div>'; }
 
 ?>
+
+<body>
 
 <section>
 
@@ -69,10 +71,7 @@ require_once(__DIR__."/process/connexionBdd.php");
 
 </section>
 
-<!----- ***** FOOTER ******------>
-<footer class="footer">
-    <img src="/img/logo2.png" width="80vw">
-    </footer>
+
 
 </body>
 </html>
