@@ -12,38 +12,42 @@ include '../View/header.php';
 
     <!--SECTION 2 PLAY -->
     <div class="container" id="play">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-md-6 align-self-center">
+        <div class="row d-flex justify-content-center">
+            
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center">
 
-            <a href="quiz.php?id=<?=$_GET['id'];?>" class="glowButton" role="button">Play !</a>
+                <a href="quiz.php?id=<?=$_GET['id'];?>" class="glowButton" role="button">Play !</a>
 
             </div>
-            <div class="col"></div>
-            </div>
+        </div>
     </div>
 
     <!--SECTION 3 LEADERBOARD -->
     <div class="container" id="leaderBoard">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-md-6 align-self-center">
+        <div class="row d-flex justify-content-center">
+
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center">
                 <a href="score.php?id=<?=$_GET['id'];?>" class="glowButton" role="button">leaderBoard !</a>
             </div>
-            <div class="col"></div>
+           
+           
         </div>
     </div>
 
     <!--SECTION 3 NEW Q -->
     <div class="container" id="newQuiz">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-md-6 align-self-center">
+        <div class="row d-flex justify-content-center">
+            
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center">
                 <a href="newquestion.php?id=<?=$_GET['id'];?>" class="glowButton" role="button">New Quiz!</a>
             </div>
-            <div class="col"></div>
+            
         </div>
     </div>
+
+
+    <!-- ***************************** BACK TO TOP BTN *********************************** -->
+    <a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -55,5 +59,7 @@ include '../View/header.php';
     <script src="/JS/main.js"></script>
     <script src="/JS/navbar.js"></script>
     <script src="/JS/neon.js"></script>
+    <script src="/JS/btnBackToTop.js"></script>
+
 </body>
 </html>

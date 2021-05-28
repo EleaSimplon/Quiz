@@ -9,8 +9,8 @@ include '../View/header.php';
     <h1>Creer un quiz</h1>
 
     <div class="container logincontainer">
-        <div class="row">
-            <div id="form">
+        <div class="row d-flex justify-content-center">
+            <div id="form" class="col-lg-6 col-md-12 col-sm-12">
 
                 <form action="/process/processnewquestion.php?id=<?= $_GET['id'];?>" method="POST">
 
@@ -66,7 +66,9 @@ include '../View/header.php';
                         </div>
                     </div>
 
-                    <input type="submit" name="createbtn" id='submit' value='CREER'>
+                    <div class="d-flex justify-content-center">
+                        <input class="d-flex justify-content-center" type="submit" name="createbtn" id='submit' value='CREER'>
+                    </div>
 
                 </form>
             </div>

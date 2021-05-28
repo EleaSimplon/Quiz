@@ -32,31 +32,42 @@ while (in_array($idQuestion, $array) ) {
         ]);
 
     $donnees = $reponseStatement->fetch();
+?>
 
-    echo    "<section id='questionreponse'>
+    <section class="container" id="questionreponse">
+        <div class="row d-flex justify-content-center">
 
-                <div class='question'> 
+            <div class="question col-lg-12 col-md-12 col-sm-12"> 
 
-                <br><h3>".$donnees['question']."</h3>
+                <h3><?=$donnees['question']?></h3>
 
+            </div>
+        </div>
+
+        <div class="container" id="reponses">
+            <div class="row row-cols-2 d-flex justify-content-center">
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+
+                    <button id="rep" value="<?=$donnees['option1']?>" class="col1"><?=$donnees['option1']?></button>
+                    
+                    <button id="rep" value="<?=$donnees['option2']?>" class="col2"><?=$donnees['option2']?></button>
                 </div>
+            </div>
 
-                <div class='container' id='reponses'>
-                    <div class='row row-cols-2'>
-    
-                        <button id='rep' value='".$donnees['option1']."'class='col1'>".$donnees['option1']."</button>
-                        
-                        <button id='rep' value='".$donnees['option2']."'class='col2'>".$donnees['option2']."</button>
-        
-                        <button id='rep' value='".$donnees['option3']."'class='col3'>".$donnees['option3']."</button>
-        
-                        <button id='rep' value='".$donnees['option4']."'class='col4'>".$donnees['option4']."</button>
-                        
-                        <input type='hidden'  value='".$donnees['bonneReponse']."'id='bonneReponse'>
-                        <input type='hidden'  value='".$donnees['id']."'id='questionId'>
+            <div class="row row-cols-2 d-flex justify-content-center">
+                <div class="col-lg-6 col-md-6 col-sm-12">
 
-                    </div>
-                </div>
+                    <button id="rep" value="<?=$donnees['option3']?>" class="col3"><?=$donnees['option3']?></button>
 
-            </section>
-        <button class='next glowButton' id='next' value='next'>Suivant</button>";
+                    <button id="rep" value="<?=$donnees['option4']?>" class="col4"><?=$donnees['option4']?></button>
+                </div>   
+            </div>
+                <input type="hidden"  value="<?=$donnees['bonneReponse']?>" id="bonneReponse">
+                <input type="hidden"  value="<?=$donnees['id']?>" id="questionId">
+
+        </div>
+
+    </section>
+
+    <button class="next glowButton" id="next" value="next">Suivant</button>

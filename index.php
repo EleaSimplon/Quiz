@@ -48,8 +48,8 @@ require_once(__DIR__."/process/connexionBdd.php");
 
     <!-----*** LOGIN ***----->
     <div class="container logincontainer">
-        <div class="row">
-            <div id="form">
+        <div class="row d-flex justify-content-center">
+            <div id="form" class="col-lg-6 col-md-12 col-sm-12">
                 <form action="process/process.php" method="POST" class="login">
                     <h2>Entrez un pseudo pour créer ou vous connecter</h2>
                         
@@ -61,9 +61,11 @@ require_once(__DIR__."/process/connexionBdd.php");
                             </div>
                         </div>
                     </div>
-            
-                        <input type="submit" name="loginbtn" id='submit' value='LOGIN'>
 
+                    <div class="d-flex justify-content-center">
+                        <input type="submit" name="loginbtn" id='submit' value='LOGIN'>
+                    </div>
+                    
                 </form>
             </div>
         </div>

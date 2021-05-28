@@ -27,23 +27,28 @@ include '../View/header.php';
         
 
     <!-- SCORE GRAPHIQUE -->
-    <div style="width: 50%">
-        <canvas id="myChart"></canvas>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div style="width: 50%">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
     </div>
+    
 
-        <?php
-   
-    $stmt = $pdo->prepare("SELECT * FROM score WHERE id_pseudo = ?");
-    $stmt->execute([$_GET['id']]);
+    <?php
 
-    $scores = [];
-    $idPartie = [];
+        $stmt = $pdo->prepare("SELECT * FROM score WHERE id_pseudo = ?");
+        $stmt->execute([$_GET['id']]);
 
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        extract($row);
-        $scores[] = (int)$score;
-        $idPartie[] = (int)$id;
-    }
+        $scores = [];
+        $idPartie = [];
+
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            extract($row);
+            $scores[] = (int)$score;
+            $idPartie[] = (int)$id;
+        }
 
     ?>
 

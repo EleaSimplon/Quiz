@@ -11,15 +11,15 @@ include '../View/header.php';
 
     <!----- ***** SECTION 3 & 4 QUESTIONS & REPONSES ******------>
 
-    <?php include 'questionanswer.php';?>
+    <?php include 'questionanswer.php'?>
 
     <!----- ***** SECTION 2 SCORE ******------>
     <form action="/../process/traitementscore.php?id=<?=$_GET['id'];?>" method="post">
           
 
-            <button class="glowButton scorebtn" id="scorebtn" type="submit" value="Envoyer">Score</button>
-            
-            <input readonly type="number" name="score" class="score" value="0">
+        <button class="glowButton scorebtn" id="scorebtn" type="submit" value="Envoyer">Score</button>
+        
+        <input readonly type="number" name="score" class="score" value="0">
 
     </form>
    

@@ -1,0 +1,79 @@
+@import 'mixin';
+
+/* SECTION 2 QUESTIONS */
+
+.question {
+    margin-top: 6vw;
+    background-color: #10002b;
+    border: 1px solid rgb(161, 205, 255);
+    border-radius: 20px;
+    text-align: center;
+}
+
+#reponses {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col1 {
+    border-radius: 20px;
+    @include colQuiz;
+}
+.col2 {
+    border-radius: 20px;
+    outline:none;
+    @include colQuiz;
+    margin-top: 2rem;
+}
+.col3 {
+    border-radius: 20px;
+    outline:none;
+    @include colQuiz;
+}
+
+.col4 {
+    border-radius: 20px;
+    @include colQuiz;
+    margin-top: 2rem;
+}
+
+#next{
+    float: right;
+    margin-top: 2.5%;
+    margin-right: 5.6%;
+}
+
+.score{
+    text-align: right;
+    width: 15%;
+    visibility: hidden;
+    float: right;
+}
+
+#scorebtn {
+    visibility: hidden;
+    margin-top: 2vw;
+    animation: shazam;
+    animation-duration: 0.1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 120s;
+}
+
+@keyframes shazam{
+
+    0% {
+        visibility: hidden;
+    }
+    
+    99.99% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}

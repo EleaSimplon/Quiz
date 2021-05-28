@@ -1,0 +1,57 @@
+/***** SECTION 1 HEADER *****/
+
+/**** PAGE LOGIN ****/
+
+.logincontainer {
+    margin-top: 5vw;
+
+    #submit {
+        display: flex;
+        justify-content: center;
+    }
+
+    #form {
+        background-color:rgb(189, 190, 255);
+        margin:0 auto;
+        border-radius: 2vw;
+        padding-top: 70px;
+        display: flex;
+        justify-content: center;
+
+        .labels {
+        display: inline-block;
+        text-align: right;
+        width: 40%;
+        padding: 5px;
+        margin-top: 10px;
+
+            .rightTab {
+                display: inline-block;
+                text-align: left;
+                width: 48%;
+                vertical-align: middle;
+
+                .input-field {
+                    padding: 5px;
+                    margin:10px;
+                    border: 1px solid #c0c0c0;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+}
+
+input[type=submit] {
+    background-color: #a578ee;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color:  #9066d3;
+    color: white;
+    border: 1px solid #dc30f3;
+}

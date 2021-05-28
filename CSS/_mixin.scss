@@ -1,0 +1,27 @@
+@mixin menuContainer {
+    width: 50vw;
+    height: 27vw;
+    border-radius: 20px;
+    margin-top: 5vw;
+    padding-top: 20px;
+    text-align: center;
+    background-size: cover;
+}
+
+@mixin colQuiz {
+    text-align: center;
+    box-shadow:
+    inset 0 0 50px #fff,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+    background: #3e1f47; 
+    color: white;
+    font-size: x-large;
+    border: rgb(90, 90, 90) solid 3.5px;
+    min-width: 20rem;
+}
