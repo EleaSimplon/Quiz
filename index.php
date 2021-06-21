@@ -24,7 +24,6 @@ require_once(__DIR__."/process/connexionBdd.php");
     <!-- NAV BAR -->
     <div class="navbar sticky-top">
         <img src="/img/logo2.png" width="50vw">
-        <div class="navbar__brand">QUIZ TIME !</div>
         <div class="navbar__menu">
             <a class="navbar__item" href="/quiz/menu.php">Home ❓<span class="navbar__item__hovered"></span><span class="navbar__item__content" data-content="Home ❓"></span></a>
             <a class="navbar__item" href="/index.php">Login 👀<span class="navbar__item__hovered"></span><span class="navbar__item__content" data-content="Login 👀"></span></a>
@@ -73,7 +72,8 @@ require_once(__DIR__."/process/connexionBdd.php");
 
 </section>
 
+<?php
 
+include 'View/footer.php';
 
-</body>
-</html>
+?>

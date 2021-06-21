@@ -24,7 +24,6 @@
     <!-- NAV BAR -->
     <div class="navbar sticky-top">
         <img src="/img/logo2.png" width="50vw">
-        <div class="navbar__brand">QUIZ TIME !</div>
         <div class="navbar__menu">
             <a class="navbar__item" href="menu.php?id=<?=$_GET['id'];?>">Home ❓<span class="navbar__item__hovered"></span><span class="navbar__item__content" data-content="Home ❓"></span></a>
             <a class="navbar__item" href="/index.php">Login 👀<span class="navbar__item__hovered"></span><span class="navbar__item__content" data-content="Login 👀"></span></a>

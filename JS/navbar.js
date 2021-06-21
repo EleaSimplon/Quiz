@@ -1,5 +1,5 @@
+const x = document.querySelector(".navbar");
 function navResponsive() {
-    const x = document.querySelector(".navbar");
-    if (x.className === "navbar") x.className += " responsive";
-    else x.className = "navbar";
+    if (x.className === "navbar sticky-top") x.className += " responsive";
+    else x.className = "navbar sticky-top";
   }  
